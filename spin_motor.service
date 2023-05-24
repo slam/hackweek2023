@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=discord
 WorkingDirectory=/home/discord
-ExecStart=/usr/bin/python3 /home/discord/spin_motor.py 10000 forever
+ExecStart=/usr/bin/python3 /home/discord/hackweek2023/spin_motor.py 10000 forever
 Restart=on-failure
 
 [Install]

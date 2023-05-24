@@ -18,7 +18,7 @@ def main(duration_ms, run_forever=False):
     if not run_forever:
         # Calculate number of pulses
         num_pulses = int(duration_ms) // 1
-    pulse_interval = 0.001  # 1 ms
+    pulse_interval = 0.0002  # 200us
 
     # Initialize timer
     timer = timeit.default_timer
