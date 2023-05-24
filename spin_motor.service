@@ -1,0 +1,13 @@
+[Unit]
+Description=Spin motor at boot
+After=network.target
+
+[Service]
+Type=simple
+User=discord
+WorkingDirectory=/home/discord
+ExecStart=/usr/bin/python3 /home/discord/spin_motor.py 10000 forever
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
